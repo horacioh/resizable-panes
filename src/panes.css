@@ -1,3 +1,6 @@
+.panes-wrapper {
+}
+
 .panes {
   flex: 1;
   display: flex;
@@ -7,23 +10,46 @@
   left: 0;
   right: 0;
   height: 100%;
+  user-select: text;
+
+  display: flex;
+  flex: 1 1 0%;
+  height: 100%;
+  position: absolute;
+  outline: none;
+  overflow: visible;
+  user-select: text;
+  flex-direction: row;
+  left: 0px;
+  right: 0px;
 }
 
 .panes [data-pane] {
   flex: 1;
-  min-width: 100px;
+  min-width: 300px;
   flex: 0 0 auto;
   position: relative;
-  width: 50%;
 }
 
 [data-pane-index="1"] {
+  --size: 50%;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  width: var(--size);
 }
 
 [data-pane-index="2"] {
   max-width: 100%;
   width: 100%;
   overflow: hidden;
+  width: 50%;
+  visibility: visible;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  flex: 1 1 0% !important;
+  position: relative;
+  outline: none;
 }
 
 .panes .resizer {
