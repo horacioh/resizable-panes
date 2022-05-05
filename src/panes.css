@@ -1,0 +1,43 @@
+.panes {
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  position: absolute;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.panes [data-pane] {
+  flex: 1;
+  min-width: 100px;
+  flex: 0 0 auto;
+  position: relative;
+  width: 50%;
+}
+
+[data-pane-index="1"] {
+}
+
+[data-pane-index="2"] {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.panes .resizer {
+  flex: none;
+  width: 11px;
+  opacity: 0.4;
+  margin: 0 -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transition: all 0.1s ease;
+}
+
+.panes .resizer:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+  cursor: col-resize;
+}
