@@ -38,42 +38,7 @@ export function Panes(props: any) {
           onDragStart={(event) => service.send(event)}
           onMouseOver={(event) => service.send(event)}
         />
-        <div data-pane data-pane-index="2">
-          <p>
-            Quality. Is. paramount. When you deliver an application to your
-            users, it needs to perform at a high standard. They expect to get
-            their job done and using your service or site is part of that
-            process. A great way to ensure your users can perform the vital
-            process your service provides is end-to-end (E2E) testing. E2E
-            Testing saves you time and headaches (especially for those of us on
-            call) as it ensures every vital workflow your users perform are
-            bug-free in each and every commit you make. Whether it’s Friday or
-            earlier in the week, you can be confident your app is performing as
-            it should. There are a lot of tools out there to help you write and
-            run your tests, for E2E tests, Playwright from Microsoft is a great
-            option. Basarat demonstrates how to get started with Microsoft
-            Playwright. There’s no fussing with configuring files to work with
-            Playwright. Adding Playwright is as easy as installing it when using
-            create react app. It comes pre-configured out of the box with
-            example tests to follow. You'll follow this up with various features
-            of Playwright that make it extremely easy for you to test and
-            automate modern web applications. Microsoft has even created a VS
-            Code extension to allow you to run tests directly in your code
-            editor with just the click of a button. It can time, re-run, and
-            even bulk run all of your tests. You can add breakpoints to pause
-            your tests at a certain point for better debugging. Playwright Test
-            for VSCode helps to create a much smoother workflow, especially when
-            you want to just focus on the code. Another amazing feature of
-            Playwright is the visual regression testing. A common requirement in
-            web application testing is to make sure that your web application
-            looks exactly as you expect. When running a test with
-            page.screenshot, it takes a picture and compares it to previous
-            screenshots to make sure that your application looks the same.
-            Basarat has released this course to give you a full tour of
-            Playwright so you can start shipping code with confidence as soon as
-            possible.
-          </p>
-        </div>
+        <div data-pane data-pane-index="2" />
       </div>
     </div>
   );
